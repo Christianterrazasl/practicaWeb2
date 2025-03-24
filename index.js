@@ -23,10 +23,10 @@ app.post('/persona', async (req,res)=>{
     }
 });
 
-app.get('/persona', async (req,res)=>{
+app.get('/personaPage', async (req,res)=>{
     try{
         const users = await User.findAll();
-        res.status(200).json(users);
+        res.render('pages/paginaPersonas', {users});
 
     }catch(err){
         res.status(500).send('Error de db');
