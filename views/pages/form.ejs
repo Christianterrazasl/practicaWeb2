@@ -1,0 +1,16 @@
+<%- include('../components/header') %>
+<div class="container">
+    <form class="form" action="/persona" method="post">
+        <label>Nombre:</label>
+        <input type="text" class="form-control" name="nombre">
+        <label>Apellido:</label>
+        <input type="text" class="form-control" name="apellido">
+        <label>Correo:</label>
+        <input type="email" class="form-control" name="email">
+        <label>Fecha de nacimiento:</label>
+        <input type="date" class="form-control" name="fechaNacimiento">
+        <button type="submit" class="btn btn-primary"> Enviar </button>
+    </form>
+</div>
+
+<%- include('../components/footer') %>
